@@ -22,7 +22,6 @@ def dependencies():
         except Exception() as e:
             stderr.write(f"\033[0;31m {str(e)} \033[0m")
             exit(1)
-        from img2pdf import convert
 
 def checkLibrary():
     with open('dependencies/requirements.txt') as file:
@@ -46,11 +45,13 @@ def getFile(path):
         
         
 def createPDF(img, dir):
+    from img2pdf import convert
     if img:
         outputDir = "output/"
         name = input("\033[0;33minserire il nome del pdf che vuoi creare \033[0m")
         with open(f"{outputDir}{name}.pdf", 'wb') as pdf:
             pdf.write(convert([open(f"{dir}/{f}", "rb") for f in img]))
+        print('\033[92mPDF creato con successo!\033[0m')
     else:
         stderr.write("non sono state trovate delle foto")
         
