@@ -11,7 +11,7 @@
     pip install --user -r dependencies/requirements.txt
 ```
 ![output image](assets/img/ouput.png)
-## ECEVUTION
+## EXECUTION
 ---
 ### you must have installed python on your system to run this script, afer installed it run this command in a command prompt or a terminal like CMD or Powershell in windows.
 
