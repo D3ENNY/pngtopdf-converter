@@ -18,6 +18,7 @@
 ```
     python main.py path/to/img/directory
 ```
+![](assets/img/output.png)
 ## CONTACT
 ---
 <center>
