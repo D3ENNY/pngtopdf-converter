@@ -2,8 +2,11 @@
 
 from glob import glob
 from sys import exit, argv, stderr
-from os import system, getcwd, chdir
+from os import system, getcwd, chdir, makedirs
+from os.path import exists
 from subprocess import check_output, CalledProcessError
+from shutil import rmtree
+
     
 def dependencies():
     if not checkLibrary():
@@ -48,6 +51,8 @@ def createPDF(img, dir):
     from img2pdf import convert
     if img:
         outputDir = "output/"
+        if not exists(outputDir):
+            makedirs(outputDir)
         name = input("\033[0;33minserire il nome del pdf che vuoi creare \033[0m")
         with open(f"{outputDir}{name}.pdf", 'wb') as pdf:
             pdf.write(convert([open(f"{dir}/{f}", "rb") for f in img]))
