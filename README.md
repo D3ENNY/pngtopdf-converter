@@ -1,19 +1,19 @@
 # pngtopdf-converter
-### That script allow you to convert a entire folder of image PNG or JPG in a PDF file
-- It include also a check if there aren't some dependency, and it tell you if it's all ok, or not during the execution of the program. 
+### This script lets you convert an entire folder of PNG or JPG images into a PDF file
+- You can also check for missing dependencies, and the script will tell you if you're missing any at runtime. 
 
 ## INSTALLATION
 ---
-### If the script don't run because there aren't some dependency, you must run that command to install all of it.
+### If the script doesn't run because some dependencies are missing, run the following command to install them.
 
--   <p style="color: #ff000"> Before you must change directory to the project directory! </-p>
+-   <p style="color: #ff000"> You must first change directory to the project directory! </p>
 ```
     pip install --user -r dependencies/requirements.txt
 ```
 ![output image](assets/img/ouput.png)
-## EXECUTION
+## USAGE
 ---
-### you must have installed python on your system to run this script, afer installed it run this command in a command prompt or a terminal like CMD or Powershell in windows.
+### You need to have python installed on your system to run this script, and then use this command in a shell (like CMD or PowerShell in windows).
 
 ```
     python main.py path/to/img/directory
@@ -50,7 +50,7 @@
 
 ## SUPPORT ME
 ---
-If you want support me and my project you can give me a little donation at:
+If you want support me or my projects you can give me a little donation here:
 <center>
   <table border=0>
     <tr>
